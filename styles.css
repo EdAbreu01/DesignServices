@@ -1,6 +1,9 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;font-family:"Manrope", sans-serif ;}
 
+html{
+    font-size: 16px;
 
+}
 
 
  :root {
@@ -13,10 +16,10 @@
     /* TYPOGRAPHY */
     --font-base: 'Inter', system-ui, sans-serif;
    
-    --Display-XL: 60px;
-    --Heading-L: 36px;
-    --Heading-M: 24px;
-    --Body: 0.97rem;
+    --Display-XL: 70px;
+    --Heading-L: 36px ;
+    --Heading-M: 1.5rem;
+    --Body: 0.86rem;
 
     /* BORDER RADIUS */
     --Small:4px;
@@ -61,8 +64,7 @@
     .dot{
     width: 10px;
     height: 10px;
-    background-color:  #22C55E
-;
+    background-color:#22C55E;
     font-weight: 900;
     border-radius: var(--Pill);
     margin-right: 12px;
@@ -97,8 +99,48 @@ nav a{
     align-items: center;
 }
 
-.hero-section{
+/*HERO*/
+
+.hero-section-container{
+    margin: auto;
     width: 100%;
     height: 500px;
-    background-color: #22C55E;
+    background-color: #8febb1;
+    padding-top: 82px;
+
+}
+
+.hero-section-inner{
+    background-color: #506795;
+    margin: auto;
+    width: 90%;
+
+
+
+}
+
+h1{
+    font-size: var(--Display-XL);
+    font-weight: 900;
+
+}
+.hero-section-subtitle{
+    font-size: var(--Heading-M);
+    width: 50%;
+    font-weight: 400;
+
+}
+.hero-section-container-btn{
+margin-top: 42px;
+display: flex;
+gap:14px ;
+}
+
+.styling-btn{
+    padding: 12px 18px;
+    border-radius: var(--Medium);
+    border: none;
+    font-size: var(--Body);
+    font-weight: 600;
+
 }
