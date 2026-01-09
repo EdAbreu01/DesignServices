@@ -52,7 +52,7 @@ html{
     display: flex;
     gap: 36px;
 }
-
+/* INNER*/
 .header-inner{
     margin: auto;
     display: flex;
@@ -109,7 +109,7 @@ nav a{
     padding-top: 82px;
 
 }
-
+/* INNER*/
 .hero-section-inner{
     background-color: #506795;
     margin: auto;
@@ -143,4 +143,10 @@ gap:14px ;
     font-size: var(--Body);
     font-weight: 600;
 
+}
+
+/*SERVICIOS*/
+
+.servicio-section-container{
+    background-color: #8febb1;
 }
