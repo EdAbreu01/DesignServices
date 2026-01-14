@@ -14,12 +14,14 @@ html{
     --Vapor-Bg-Light:#F6F6F8;
 
     /* TYPOGRAPHY */
-    --font-base: 'Inter', system-ui, sans-serif;
-   
+    --font-base: 'Manrope', sans-serif;
+     
+    
+    
     --Display-XL: 70px;
     --Heading-L: 36px ;
     --Heading-M: 1.5rem;
-    --Body: 0.86rem;
+    --Body: 0.90rem;
 
     /* BORDER RADIUS */
     --Small:4px;
@@ -51,8 +53,10 @@ html{
 
 .header-container-nav{
     display: flex;
+    align-items: center;
     gap: 36px;
 }
+
 /* INNER*/
 .header-inner{
     margin: auto;
@@ -62,24 +66,25 @@ html{
     align-items: center;
     }
 
-    .dot{
-    width: 10px;
-    height: 10px;
+.dot{
+    width: 8px;
+    height: 8px;
     background-color:#22C55E;
     font-weight: 900;
     border-radius: var(--Pill);
-    margin-right: 12px;
+    margin-right: 6px;
 }
 
 
 .availability-status{
-    padding: 1px 16px ;
+    width: max-content;
+    height: max-content;
+    padding: 4px 10px;
     background-color:#E6FBEA;
-    
-   /* border-radius: var(--Pill);*/
+   border-radius: var(--Pill);
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     font-size: 0.85rem;
     display: flex;
     align-items: center;
@@ -116,10 +121,11 @@ nav a{
 
 h1{
     font-size: var(--Display-XL);
-    font-weight: 900;
+    font-weight:800;
     line-height: 70px;
     margin-bottom: 12px;
 }
+
 .hero-section-subtitle{
     font-size: var(--Heading-M);
     font-weight: 400;
@@ -132,27 +138,29 @@ gap:16px ;
 }
 
 .styling-btn{
-    padding: 12px 18px;
+    padding: 12px 24px;
     border-radius: var(--Medium);
     border: none;
     font-size: var(--Body);
     font-weight: 600;
     background-color: var(--RoyalBlue-Primary);
     color: #fff;
+    box-shadow: 10px 13px 30px -2px rgba(20, 48, 255, 0.21);
 }
 
 .styling-btn:hover{
-        background-color: var(--Slate-Secondary);
+    background-color: var(--Slate-Secondary);
 
 }
 
 
 .styling-project-btn{
-    padding: 12px 18px;
+    padding: 12px 24px;
     border-radius: var(--Medium);
     border: none;
     font-size: var(--Body);
     font-weight: 600;
+    background-color: #fff;
 }
 
 
@@ -182,7 +190,9 @@ gap:16px ;
 }
 
 .services-grid > .services-card:last-child{
-    background-color: var(--RoyalBlue-Primary)
+    background-color: var(--RoyalBlue-Primary);
+        box-shadow: 10px 13px 30px -2px rgba(20, 48, 255, 0.21);
+
 }
 
 .services-grid  .services-card button{
@@ -191,16 +201,9 @@ gap:16px ;
     font-weight: 900;
 }
 
-
-
-
-
 .services-container-header{
     margin-bottom: 42px;
 }
-
-
-
 
 .services-grid{
 display:grid;
@@ -231,8 +234,6 @@ list-style: none;
 
 .services-card article button{
  margin-top: 12px;
-
-
 }
 
 .services-icon{
@@ -242,17 +243,6 @@ list-style: none;
     margin-bottom: 12px;
     border-radius: var(--Medium);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*QUOTE*/
@@ -269,17 +259,15 @@ list-style: none;
     text-align: center;
     font-size: 48px;
     line-height: 56px;
-    font-weight: 500;
-    
+    font-weight: 500;    
 }
+
 .quote-container b{
  font-weight: 800;
  text-transform: upp;
  color: #001317;
-font-style: italic;
-    
+ font-style: italic;
 }
-
 
 
 
@@ -297,7 +285,6 @@ font-style: italic;
 }
 
 .portfolio-container-inner header{
-
     padding-bottom: 50px;  
 }
 
@@ -374,11 +361,50 @@ font-style: italic;
 /*--F O O T E R ---------------*/
 
 .footer-section-container{
-    background-color: #22C55E;
+    background-color: var(--Midnight-Bg-Dark);
 }
 
 .footer-section-inner{
     width: 90%;
     height: 500px;
     margin: auto;
+    padding-top:80px;
+
+}
+
+.footer-title{
+    font-size: var(--Display-XL);
+    font-weight: 900;
+    margin-bottom: 32px;
+    color: var(--Vapor-Bg-Light);
+}
+
+.footer-section-inner h2{
+    margin-top:32px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #313739;
+    padding-bottom: 32px;
+    color: var(--Vapor-Bg-Light);
+}
+
+.footer-section-inner p{
+    color:var(--Vapor-Bg-Light)
+
+}
+
+.footer-contact-section a{
+    margin-left: 12px;
+    color: var(--Vapor-Bg-Light);
+
+}
+
+.footer-lastline{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-lastline h3{
+    color: var(--Vapor-Bg-Light);
+
 }
