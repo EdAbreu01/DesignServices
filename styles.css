@@ -42,29 +42,39 @@ html{
 
 
 /*H E A D E R -----------------*/
-.header-container{
+.header{
     background-color: var(--Vapor-Bg-Light);
     height: 80px;
-    width: 100%;
     display: flex;
     align-items: center;
     border-bottom: #d3d7de 1.5px solid;
 }
 
-.header-container-nav{
+/* INNER*/
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    }
+    
+    /*
+    .header-container{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    }*/
+    
+.nav-bar{
     display: flex;
     align-items: center;
     gap: 36px;
 }
-
-/* INNER*/
-.header-inner{
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-    }
 
 .dot{
     width: 8px;
@@ -106,17 +116,19 @@ nav a{
 
 /*H E R O -----------------*/
 
-.hero-section-container{
-    width: 100%;
+.hero{
     height: 600px;
     background-color: var(--Vapor-Bg-Light);
     display: flex;
 }
 
 /* HERO INNER*/
-.hero-section-inner{
-    margin: auto;
-    width: 90%;
+.hero-container{
+    margin: auto 0;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
 }
 
 h1{
@@ -178,15 +190,17 @@ gap:16px ;
 
 /*S E R V I C E S ---------------------------------*/
 
-.services-container{
+.services{
     background-color: #ffffff;
     padding-top: 52px;
     padding-bottom: 52px;
 }
 
-.services-container-inner{
+.services-container{
     margin: auto;
-    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
 }
 
 .services-grid > .services-card:last-child{
@@ -240,6 +254,7 @@ list-style: none;
     width: 36px;
     height: 36px;
     background-color: #98b0e2;
+    color: #001317;
     margin-bottom: 12px;
     border-radius: var(--Medium);
 }
@@ -247,22 +262,23 @@ list-style: none;
 
 /*QUOTE*/
 
-.quote-container{
+.quote{
     background-color: #f5f8ff;
 }
 
-.quote-container h2{
-    margin:auto;
+.quote h2{
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 70%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
     text-align: center;
     font-size: 48px;
     line-height: 56px;
     font-weight: 500;    
 }
 
-.quote-container b{
+.quote b{
  font-weight: 800;
  text-transform: upp;
  color: #001317;
@@ -274,17 +290,18 @@ list-style: none;
 /*PORFOLIO*/
 
 
+.portfolio{
+
+}
+
 .portfolio-container{
-
+    padding-top: 50px;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;  
 }
 
-.portfolio-container-inner{
-    margin: auto;
-    width: 90%;
-    padding-top: 50px;  
-}
-
-.portfolio-container-inner header{
+.portfolio-container header{
     padding-bottom: 50px;  
 }
 
@@ -300,9 +317,7 @@ list-style: none;
     font-weight: 900;
 }
 
-.selected-works{
-    background-color: #1D56C9;
-}
+
 
 .portfolio-project{
     display: grid;
@@ -328,18 +343,19 @@ list-style: none;
 
 /*--A B O U T ---------------*/
 
-.about-section-container{
+.about{
     background-color: var(--Vapor-Bg-Light);
     height: max-content;
     padding-top: 82px;
     padding-bottom: 82px;
 }
-.about-section-inner{
+.about-container{
     display: grid;
-    width: 90%;
     grid-template-columns:repeat(2, 1fr);
     margin: auto;
-    gap: 28px;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
 }
 
 .about-photo{
@@ -360,15 +376,17 @@ list-style: none;
 
 /*--F O O T E R ---------------*/
 
-.footer-section-container{
+.footer-section{
     background-color: var(--Midnight-Bg-Dark);
 }
 
-.footer-section-inner{
-    width: 90%;
+.footer-container{
     height: 500px;
     margin: auto;
     padding-top:80px;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
 
 }
 
@@ -379,7 +397,7 @@ list-style: none;
     color: var(--Vapor-Bg-Light);
 }
 
-.footer-section-inner h2{
+.footer-container h2{
     margin-top:32px;
     margin-bottom: 32px;
     border-bottom: 2px solid #313739;
@@ -387,7 +405,7 @@ list-style: none;
     color: var(--Vapor-Bg-Light);
 }
 
-.footer-section-inner p{
+.footer-container p{
     color:var(--Vapor-Bg-Light)
 
 }

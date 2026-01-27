@@ -1,6 +1,7 @@
-let suma = 0;
+let linea = ""
+let levels = 5;
 
-const numeros = [2,4,5,11,2]
-
-
-    console.log(numeros[numeros.length-1])
+for (i = 0 ; i < levels ; i++){
+   
+    console.log( linea += "#")
+}
