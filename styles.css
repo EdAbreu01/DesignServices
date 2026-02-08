@@ -76,6 +76,11 @@ html{
     gap: 36px;
 }
 
+.nav-bar a:hover{
+    color: var(--RoyalBlue-Primary);
+    transition: 0.75s;
+}
+
 .dot{
     width: 8px;
     height: 8px;
@@ -91,7 +96,7 @@ html{
     height: max-content;
     padding: 4px 10px;
     background-color:#E6FBEA;
-   border-radius: var(--Pill);
+    border-radius: var(--Pill);
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 0.04em;
@@ -120,6 +125,13 @@ nav a{
     height: 600px;
     background-color: var(--Vapor-Bg-Light);
     display: flex;
+    background-image: url("faizur-rehman-pHPzdEHN6Os-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+
+
+
 }
 
 /* HERO INNER*/
@@ -129,6 +141,7 @@ nav a{
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 1.5rem;
+    
 }
 
 h1{
@@ -162,6 +175,7 @@ gap:16px ;
 
 .styling-btn:hover{
     background-color: var(--Slate-Secondary);
+    transition: 0.25s;
 
 }
 
@@ -178,6 +192,8 @@ gap:16px ;
 
 .styling-project-btn:hover{
         background: #8fbedb;
+            transition: 0.25s;
+
 
 }
 
@@ -187,6 +203,8 @@ gap:16px ;
     font-weight: 800;
 }
 
+.hero-image{
+}
 
 /*S E R V I C E S ---------------------------------*/
 
@@ -235,6 +253,56 @@ list-style: none;
     border-radius: 12px;
 }
 
+.services-card-highlight:hover{
+background-color: var(--Slate-Secondary);
+transition: 0.55s;
+}
+
+/*SERVICE HIGHLIGHT*/
+.services-card-highlight{
+    display: flex;
+    flex-direction: row;
+    padding: 32px 28px;
+    background-color: var(--RoyalBlue-Primary);
+    border-radius: 12px;
+}
+
+.services-card-highlight h3{
+    color: var(--Vapor-Bg-Light);
+    margin-bottom: 8px;
+
+}
+
+.services-card-highlight p{
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--Vapor-Bg-Light);
+    font-size: var(--Body);
+
+}
+
+.services-card-highlight article button{
+ margin-top: 12px;
+ background-color: var(--Vapor-Bg-Light);
+ color: var(--Midnight-Bg-Dark);
+}
+
+.services-card-highlight article button:hover{
+ background-color:#fff200;
+}
+
+
+.services-icon-highlight{
+    width: 36px;
+    height: 36px;
+    /*background-color: #98b0e2;*/
+    color: #ffffff;
+    margin-bottom: 12px;
+    border-radius: var(--Medium);
+    
+}
+
+
 .services-card article h3{
     margin-bottom: 8px;
 }
@@ -253,10 +321,11 @@ list-style: none;
 .services-icon{
     width: 36px;
     height: 36px;
-    background-color: #98b0e2;
+    /*background-color: #98b0e2;*/
     color: #001317;
     margin-bottom: 12px;
     border-radius: var(--Medium);
+    
 }
 
 
@@ -364,6 +433,11 @@ list-style: none;
     background-color: hsl(0, 2%, 66%);
     border-radius: var(--Large);
     border: none;
+
+}
+
+.about-description{
+        line-height: 26px;
 
 }
 
