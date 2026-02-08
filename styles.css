@@ -2,6 +2,8 @@
 
 html{
     font-size: 16px;
+      scroll-behavior: smooth;
+
 
 }
 
@@ -119,13 +121,17 @@ nav a{
     align-items: center;
 }
 
+.home-logo{
+}
+
+
 /*H E R O -----------------*/
 
 .hero{
     height: 600px;
     background-color: var(--Vapor-Bg-Light);
     display: flex;
-    background-image: url("faizur-rehman-pHPzdEHN6Os-unsplash.jpg");
+    background-image: url("icons/back.jpg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
