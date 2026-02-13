@@ -193,12 +193,16 @@ gap:16px ;
     font-size: var(--Body);
     font-weight: 600;
     background-color: #fff;
+    text-decoration: none;
+    color: #1D56C9;
 }
 
 
 .styling-project-btn:hover{
         background: #8fbedb;
-            transition: 0.25s;
+        transition: 0.25s;
+        color: #fff;
+
 
 
 }
@@ -436,7 +440,8 @@ transition: 0.55s;
     background-color: hsl(0, 2%, 66%);
     border-radius: var(--Large);
     border: none;
-
+    object-fit: cover; /* mantiene proporción y recorta */
+    object-position: 20% 30%;
 }
 
 .about-description{
