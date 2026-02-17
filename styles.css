@@ -1,10 +1,9 @@
+/*CSS RESET*/
 *{ margin: 0; padding: 0; box-sizing: border-box;font-family:"Manrope", sans-serif ;}
 
 html{
     font-size: 16px;
       scroll-behavior: smooth;
-
-
 }
 
 
@@ -18,8 +17,7 @@ html{
     /* TYPOGRAPHY */
     --font-base: 'Manrope', sans-serif;
      
-    
-    
+    /*SIZING*/
     --Display-XL: 70px;
     --Heading-L: 36px ;
     --Heading-M: 1.5rem;
@@ -32,15 +30,6 @@ html{
     --Pill:999px;
 
 }
-
-/*
- .manrope-<uniquifier> {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} 
-*/
 
 
 /*H E A D E R -----------------*/
@@ -125,6 +114,14 @@ nav a{
 }
 
 
+
+
+
+
+
+
+
+
 /*H E R O -----------------*/
 
 .hero{
@@ -135,9 +132,6 @@ nav a{
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
-
-
-
 }
 
 /* HERO INNER*/
@@ -147,7 +141,6 @@ nav a{
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 1.5rem;
-    
 }
 
 h1{
@@ -163,9 +156,9 @@ h1{
 }
 
 .hero-section-container-btn{
-margin-top: 32px;
-display: flex;
-gap:16px ;
+    margin-top: 32px;
+    display: flex;
+    gap:16px ;
 }
 
 .styling-btn{
@@ -182,7 +175,6 @@ gap:16px ;
 .styling-btn:hover{
     background-color: var(--Slate-Secondary);
     transition: 0.25s;
-
 }
 
 
@@ -199,12 +191,9 @@ gap:16px ;
 
 
 .styling-project-btn:hover{
-        background: #8fbedb;
-        transition: 0.25s;
-        color: #fff;
-
-
-
+    background: #8fbedb;
+    transition: 0.25s;
+    color: #fff;
 }
 
 .section-title {
@@ -215,6 +204,11 @@ gap:16px ;
 
 .hero-image{
 }
+
+
+
+
+
 
 /*S E R V I C E S ---------------------------------*/
 
@@ -336,6 +330,10 @@ transition: 0.55s;
 }
 
 
+
+
+
+
 /*QUOTE*/
 
 .quote{
@@ -364,7 +362,6 @@ transition: 0.55s;
 
 
 /*PORFOLIO*/
-
 
 .portfolio{
 
@@ -417,6 +414,9 @@ transition: 0.55s;
     
 }
 
+
+
+
 /*--A B O U T ---------------*/
 
 .about{
@@ -455,6 +455,9 @@ transition: 0.55s;
     line-height: 48px;
     margin-bottom: 24px;
 }
+
+
+
 
 /*--F O O T E R ---------------*/
 
@@ -495,7 +498,25 @@ transition: 0.55s;
 .footer-contact-section a{
     margin-left: 12px;
     color: var(--Vapor-Bg-Light);
+}
 
+.footer-contact-section a{
+    text-decoration: none;
+    color: var(--Vapor-Bg-Light);
+    font-size: var(--Body);
+    font-weight: 600;
+}
+
+.footer-contact-section a:hover{
+    text-decoration: none;
+    color: var(--RoyalBlue-Primary);
+    transition: 0.25s;
+
+}
+
+.footer-email-section:hover{
+    color: var(--RoyalBlue-Primary);
+    transition: 0.25s;
 }
 
 .footer-lastline{
