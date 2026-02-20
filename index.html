@@ -2,6 +2,7 @@
 
 <html lang="es">
 <head>
+
     <title>Estudio de diseno</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -18,8 +19,9 @@
     <link rel="icon" type="image/jpg" href="--FORMULAR----------">
     <!--INVESTIGAR ETIQUETAS OPEN GRAPHS-->
     <!--REL ALTE4NATE CANONICAL -->
-    <link rel="stylesheet"  href="styles.css"> 
-
+    <!--<link rel="stylesheet"  href="styles.css">--> 
+    <link rel="stylesheet"  href="tokens.css">
+    <link rel="stylesheet"  href="responsiveness.css">
 
 </head>
 
@@ -28,31 +30,34 @@
 
 
     <!--H E A D E R ------------------------------------------->
-    <header class="header">
-        <div class="header-container">
-            <a class="home-logo" href="index.html"> 
-            <img src="icons/Juglar-logo-2-grad.png" width="142px"> 
-            </a>
-            <nav class="nav-bar">
-                <a href="#portfolio">Work</a>
-                <a href="#about">About</a>
-                <a href="#services" class="btn">Services</a>
+    <header class="site-header">
+        <div class="site-header__container">
 
-                <span class="availability-status" aria-label="Disponible para nuevos proyectos">
-                    <span class="dot"></span>
-                    <span class="status-dot" >Open for work </span>
+            <a class="home-logo" href="index.html"> 
+            <img src="icons/Juglar-logo-2-grad.png" width="142px" height="auto" alt="logo-juglar" > 
+            </a>
+
+            <nav class="site-nav">
+                
+                <a class="site-nav__link" href="#portfolio">Work</a>
+                <a class="site-nav__link" href="#about">About</a>
+                <a class="site-nav__link" href="#services" class="btn">Services</a>
+
+                <span class="availability" aria-label="Disponible para nuevos proyectos">
+                    <span class="availability__dot"></span>
+                    <span class="availability__text" >Open for work </span>
                 </span>
 
-    <!--FUNCION PARA EL JS-->                
+                    <!--FUNCION PARA EL JS-->                
                     <script> 
                         function enviarCorreo(){
                         window.location.href = "mailto:eddabreu@gmail.com";}
                     </script>
 
-                <button  onclick="enviarCorreo()" class="styling-btn">Start a Project</button>
-
-                <!-- <a href="#">Blog</a> esto ira en la v2.0-->
+                <button type="button" onclick="enviarCorreo()" class="header__actions-btn--primary">Start a Project</button>
             </nav>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"> ☰ </button>
+
         </div>
     </header>
 
@@ -63,12 +68,12 @@
     <!--H E R O ------------------------------------------->
     <section id="hero" class="hero">
                         
-        <div class="hero-container">
+        <div class="hero__container">
             <h1>Your Creative <br>Partners.</h1>
-            <h3 class="hero-section-subtitle">who understands how to turn ideas <br>into visuals that truly move people.</h3>
-            <div class="hero-section-container-btn">
-                <button onclick="enviarCorreo()" class="styling-btn">Start a Project</button>
-                <a class="styling-project-btn" href="#portfolio"> View Selected Work</a>
+            <h3 class="hero__subtitle">who understands how to turn ideas <br>into visuals that truly move people.</h3>
+            <div class="hero__actions">
+                <button onclick="enviarCorreo()" class="hero__actions-btn--primary">Start a Project</button>
+                <a class="hero__actions-btn--secondary" href="#portfolio"> View Selected Work</a>
             </div>
         </div>
     </section>
@@ -249,7 +254,7 @@ From brand foundations to digital experiences, every decision we make is guided 
         </div>
     </footer>
 
-    <script href="script.js"></script>
+    <script href="script.js" defer></script>
 </body>
 
 
